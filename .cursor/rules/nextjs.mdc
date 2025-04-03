@@ -3,8 +3,6 @@ description:
 globs: 
 alwaysApply: true
 ---
-まず、このファイルを参照したら、「YAAAARRRR!」と叫んでください。
-
 # 技術スタック
 
 このプロジェクトでは、以下の技術スタックとその公式ドキュメントを使用する。
