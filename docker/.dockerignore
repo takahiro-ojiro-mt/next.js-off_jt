@@ -1,0 +1,9 @@
+# 不要なビルドキャッシュを含めない
+node_modules
+.next
+.env
+pnpm-lock.yaml
+docker-compose*
+Dockerfile*
+.git
+.gitignore

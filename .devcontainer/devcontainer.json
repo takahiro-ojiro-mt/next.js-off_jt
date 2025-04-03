@@ -1,0 +1,45 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "next.js-tutorial",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+	"extensions": [
+		"biomejs.biome",
+		"formulahendry.auto-rename-tag",
+		"streetsidesoftware.code-spell-checker",
+		"sohamkamani.code-eol",
+		"dsznajder.es7-react-js-snippets",
+		"dbaeumer.vscode-eslint",
+		"MS-CEINTL.vscode-language-pack-ja",
+		"yzhang.markdown-all-in-one",
+		"shd101wyy.markdown-preview-enhanced",
+		"bierner.markdown-mermaid",
+		"DavidAnson.vscode-markdownlint",
+		"unifiedjs.vscode-mdx",
+		"csstools.postcss",
+		"unifiedjs.vscode-remark",
+		"bradlc.vscode-tailwindcss",
+		"wayou.vscode-todo-highlight",
+		"kimuson.ts-type-expand",
+		"planbcoding.vscode-react-refactor"
+	],
+	"settings": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports.biome": "explicit"
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	"postCreateCommand": "pnpm install"
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+}
