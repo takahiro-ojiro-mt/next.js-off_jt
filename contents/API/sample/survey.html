@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アンケートフォーム</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+    form {
+      background-color: white;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 6px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #007acc;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+      margin-top: 4px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <form id="surveyForm">
+    <h1>アンケートフォーム</h1>
+    <label>名前（必須）<input type="text" id="name" /></label>
+    <p id="nameError" class="error">名前を入力してください</p>
+
+    <label>年齢（18歳以上）<input type="number" id="age" /></label>
+    <p id="ageError" class="error">年齢は18歳以上で入力してください</p>
+
+    <label>職業
+      <select id="job">
+        <option value="">選択してください</option>
+        <option value="engineer">エンジニア</option>
+        <option value="designer">デザイナー</option>
+        <option value="student">学生</option>
+      </select>
+    </label>
+
+    <label>自己紹介<textarea id="bio" rows="4"></textarea></label>
+
+    <button type="submit">送信</button>
+  </form>
+  <script src="survey.js"></script>
+</body>
+</html>
