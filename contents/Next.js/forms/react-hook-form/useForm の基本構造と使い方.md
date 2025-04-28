@@ -36,7 +36,7 @@ const { register, handleSubmit, reset } = useForm({
 | オプション | 説明 |
 |------------|------|
 | `defaultValues` | 各フィールドの初期値 |
-| `mode` | バリデーションのタイミング（例：`onChange`, `onBlur`） |
+| `mode` | バリデーションのタイミング（例：`onChange`, `onBlur`） [参考](https://react-hook-form.com/docs/useform#mode) |
 
 ---
 

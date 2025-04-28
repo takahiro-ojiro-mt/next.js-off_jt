@@ -20,6 +20,7 @@ const schema = z
 ```
 
 - `refine()` の第一引数には、true/false を返すカスタム関数
+  - `false`が返ってきた場合にエラーを返します
 - `message` でエラー内容、`path` でどの項目にエラーを表示するか指定
 
 ---
@@ -38,7 +39,7 @@ const schema = z
 ### 🔸 複数条件の組み合わせにも使える
 
 ```ts
-.refine((data) => data.age > 20 || data.email.includes("example.com"), {
+.refine((data) => data.age > 20 || data.email.includes("@example.com"), {
   message: "年齢が21歳未満の場合、メールはexample.comのみ許可されます",
   path: ["email"],
 });

@@ -28,6 +28,7 @@ const onSubmit = async (data: FormValues) => {
 - `fetch()` の第2引数に `method`, `headers`, `body` を指定
 - `JSON.stringify()` でデータを文字列化
 - `Content-Type: application/json` を指定するのを忘れずに！
+- レスポンスの[参考](https://developer.mozilla.org/ja/docs/Web/API/Response)
 
 ---
 
