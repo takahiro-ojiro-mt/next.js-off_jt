@@ -15,13 +15,25 @@ root/
 ---
 
 ## 🚀 使い方
+
 ### 前提
+
 このリポジトリにはコミットなどせずに、各自forkしてから操作するようにしてください
 
 ### 必要環境
+
 - VS Code
 - Docker Desktop
 - Dev Containers 拡張機能
+
+### 前提条件
+
+- dockerが使用できる状態になっていること
+
+### 環境構築
+
+1. それぞれforkした本プロジェクトをローカルにcloneする
+2. dockerに本プロジェクトをbuildする(`make dev-up`)
 
 ### devContainer での開発方法
 
@@ -30,6 +42,7 @@ root/
 3. `Dev Containers: Reopen in Container` を選択
 4. コンテナのビルドが完了するまで待機
 5. 自動的に必要な拡張機能がインストールされ、開発環境が整います
+6. コンテナ内で`pnpm install`を実施
 
 ---
 

@@ -1,0 +1,18 @@
+volumes:
+  nextjs-node-modules:
+  nextjs-pnpm-store:
+
+services:
+  next-off-jt:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - ../:/workspace
+      - nextjs-node-modules:/workspace/node_modules
+      - nextjs-pnpm-store:/workspace/.pnpm-store
+    environment:
+      - NODE_ENV=development
+    command: sleep infinity
