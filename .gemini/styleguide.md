@@ -1,2 +1,8 @@
-1. Posts a code review in Japanese language.
-2. Posts a summary in Japanese language.
+# this repository styleguide
+
+## Language
+
+All answers must be in Japanese.
+
+* Posts a code review in Japanese language.
+* Posts a summary in Japanese language.
